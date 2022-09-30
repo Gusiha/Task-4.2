@@ -58,5 +58,15 @@
             ArrEl = arr;
         }
 
+        public static int Sum(params Goods[] arr)
+        {
+            int result = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                result+=arr[i].Val;
+            }
+            return result;
+        }
+
     }
 }
